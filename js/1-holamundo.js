@@ -12,9 +12,9 @@ console.log('hola comision');
 document.write("Este es un mensaje");
 
 // mostrar un mensaje en una ventana emergente
-// alert('Esto es una alerta o ventana emergente');
+//   alert('Esto es una alerta o ventana emergente');
 
-// crear o declarar una variable (var - let - const)
+// crear o declarar o inicializar una variable (var - let - const)
 
 var alumno = 'Rodrigo';
 let edad = 27;
@@ -33,6 +33,8 @@ const url = 'https://campus.rollingcodeschool.com/';
 document.write('<br>URL: '+url);
 
 let numero1 = 20;
-let numero2 = parseInt(prompt('Ingrese un numero'))
+// parseInt('el valor numerico')
+
+let numero2 = parseInt(prompt('Ingrese un numero'));
 
 document.write('<br>Resultado:'+ (numero1 + numero2));
