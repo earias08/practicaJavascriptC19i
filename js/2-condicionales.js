@@ -19,5 +19,5 @@ if (numero1 > numero2) {
   document.write("Ambos numeros son iguales -" + numero2);
 } else {
   // numero2 es mayor al numero1
-  document.write("El numero 2 es mayor que el numero 1 -" + numero2);
+  document.write("<p>El numero 2 es mayor que el numero 1 -</p>" + numero2);
 }
