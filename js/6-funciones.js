@@ -7,6 +7,7 @@ function saludar(){
 
 // funcion con parametros, argumentos
 function saludo(nombre,apellido){
+    let edad= 22;
     document.write('<br>Hola mi nombre es '+nombre+' y mi apellido es '+apellido);
 }
 function datosPersonales(direccion,nombre,apellido, dni){
