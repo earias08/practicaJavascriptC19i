@@ -54,5 +54,4 @@ for(let posicion=0; posicion < claves.length ; posicion++){
 
 // usar los metodos de un objeto
 usuarioPablo.login();
-
 usuarioPablo.logout();
