@@ -43,6 +43,16 @@ class Persona{
     }
 
 }
+// regular o no, curso, comision, legajo, notas, cuotas al dia
+class Alumno extends Persona {
+    constructor(parametroNombre, parametroApellido, parametroDNI, parametroFechaNacimiento, parametroEmail, parametroTel, parametroCurso, parametroComision, parametroCuotasAlDia){
+        // ejecutar el constructor de la clase persona
+        super(parametroNombre, parametroApellido, parametroDNI, parametroFechaNacimiento, parametroEmail, parametroTel);
+        this.curso = parametroCurso;
+        this.comision = parametroComision;
+        this.cuotaAlDia = parametroCuotasAlDia;
+    }
+}
 
 // crear o instanciar un objeto usando la clase
 let victor = new Persona('Victor', 'Ignacio', 39888777, '21/04/91', 'vignacio@gmail.com', 3814252525);
