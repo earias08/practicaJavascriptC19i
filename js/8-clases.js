@@ -23,6 +23,25 @@ class Persona{
         <br>Fecha de Nacimiento: ${this.fechaNacimiento}
         <br>Telefono: ${this.telefono}`);
     }
+
+    // agregar las propiedades conmutadas get y set
+    // get mostrar una propiedad del objeto
+    get mostrarNombre(){
+        return this.nombre;
+    }
+
+    get mostrarApellido(){
+        return this.apellido;
+    }
+    // set modificar una propiedad del objeto
+    set modificarNombre(nuevoNombre){
+        this.nombre = nuevoNombre;
+    }
+
+    set modificarApellido(nuevoApellido){
+        this.apellido = nuevoApellido;
+    }
+
 }
 
 // crear o instanciar un objeto usando la clase
@@ -36,12 +55,19 @@ let apellido = prompt('Ingrese un apellido');
 let dni = prompt('Ingrese un dni');
 let fechaNacimiento = prompt('Ingrese una fecha de Nacimiento');
 let email = prompt('Ingrese un email');
-let edad = prompt('Ingrese una edad');
 let tel = prompt('Ingrese un Telefono');
 
 let naty = new Persona(nombre, apellido, dni, fechaNacimiento, email, tel)
 
-naty.mostrarDatos()
+naty.mostrarDatos();
 
+// modificar una propiedad de un objeto
+naty.modificarNombre = 'Rocio';
+
+naty.mostrarDatos();
+
+console.log(naty.mostrarNombre);
+
+document.write('<br>'+victor.mostrarNombre +' '+ victor.mostrarApellido)
 
 
